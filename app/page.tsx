@@ -5,7 +5,6 @@ import ContactSection from "@/sections/contact";
 import FeaturedSection from "@/sections/featured";
 import LandingSection from "@/sections/landing";
 import dynamic from "next/dynamic";
-import { FC, ReactNode } from "react";
 
 // Dynamic import WaterWaveWrapper to ensure it's only used in the client-side environment
 const WaterWaveWrapper = dynamic(
@@ -21,12 +20,14 @@ export default function Home() {
       perturbance="3"
       resolution="2048"
     >
-      <div className="pb-8">
-        <LandingSection />
-        <FeaturedSection />
-        <AboutSection />
-        <ContactSection />
-      </div>
+      {() => (
+        <div className="pb-8">
+          <LandingSection />
+          <FeaturedSection />
+          <AboutSection />
+          <ContactSection />
+        </div>
+      )}
     </WaterWaveWrapper>
   );
 }

@@ -7,7 +7,7 @@ interface WaterWveWrapperProps {
   dropRadius: string;
   perturbance: string;
   resolution: string;
-  children: ReactNode;
+  children: () => ReactNode;
 }
 
 const WaterWaveWrapper: FC<WaterWveWrapperProps> = ({
@@ -24,7 +24,7 @@ const WaterWaveWrapper: FC<WaterWveWrapperProps> = ({
       perturbance={perturbance}
       resolution={resolution}
     >
-      {() => <div className="pb-8">{children}</div>}
+      {children}
     </WaterWave>
   );
 };
