@@ -35,7 +35,6 @@ export default function RootLayout({
         )}
       >
         <GrainEffect />
-        <Cursor color="#fff" />
         {children}
       </body>
     </html>

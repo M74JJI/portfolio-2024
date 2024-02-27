@@ -8,7 +8,16 @@ import LandingSection from "@/sections/landing";
 
 export default function Home() {
   return (
-    <WaterWaveWrapper
+    <div>
+      <LandingSection />
+      <FeaturedSection />
+      <AboutSection />
+      <ContactSection />
+    </div>
+  );
+}
+/*
+  <WaterWaveWrapper
       imageUrl=""
       dropRadius="3"
       perturbance="3"
@@ -23,5 +32,4 @@ export default function Home() {
         </div>
       )}
     </WaterWaveWrapper>
-  );
-}
+*/
