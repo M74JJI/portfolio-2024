@@ -8,28 +8,18 @@ import LandingSection from "@/sections/landing";
 
 export default function Home() {
   return (
-    <div>
-      <LandingSection />
-      <FeaturedSection />
-      <AboutSection />
-      <ContactSection />
-    </div>
-  );
-}
-/*
-  <WaterWaveWrapper
+    <WaterWaveWrapper
       imageUrl=""
       dropRadius="3"
       perturbance="3"
       resolution="2048"
     >
-      {() => (
-        <div className="pb-8">
-          <LandingSection />
-          <FeaturedSection />
-          <AboutSection />
-          <ContactSection />
-        </div>
-      )}
+      <div className="pb-8">
+        <LandingSection />
+        <FeaturedSection />
+        <AboutSection />
+        <ContactSection />
+      </div>
     </WaterWaveWrapper>
-*/
+  );
+}
